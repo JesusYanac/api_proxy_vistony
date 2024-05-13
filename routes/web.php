@@ -9,7 +9,7 @@ Route::get('/', function () {
     return view('welcome');
 });
 Route::middleware([CorsMiddleware::class])->get('/hello', function () {
-    return 'welcome';
+    return 'welcome user';
 });
 // Ruta para obtener datos de Trade Marketing
 // /api/trade-marketing?DateStart=20230101&DateFinish=20240423
